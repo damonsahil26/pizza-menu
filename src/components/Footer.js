@@ -8,7 +8,12 @@ export const Footer = () => {
     return (
         <div>
             <footer className="footer">
-                {isOpen ? "We're open!!" : "Sorry !! We're are open till 22:00."}
+                {
+                    isOpen && (<div className="order">
+                        <p>We're open until {closedHours}:00. Come visit us now or order online.</p>
+                        <button className="btn">Order Now</button>
+                    </div>)
+                }
             </footer>
         </div>
     );
