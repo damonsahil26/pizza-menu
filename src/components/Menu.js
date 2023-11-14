@@ -9,7 +9,7 @@ export const Menu = () => {
             <ul className="pizzas">
                 {
                     pizzaData.map(pizzaType => (
-                        <PizzaCard name={pizzaType.name} ingredients={pizzaType.ingredients} price={pizzaType.price} photoName={pizzaType.photoName} key={pizzaType.name} />
+                        <PizzaCard name={pizzaType.name} ingredients={pizzaType.ingredients} price={pizzaType.price} photoName={pizzaType.photoName} soldOut={pizzaType.soldOut} key={pizzaType.name} />
                     ))
                 }
             </ul>
